@@ -1,0 +1,23 @@
+{
+    "name": "davidxu/yii2-jwt",
+    "description": "A JWT extension based on Icobucci",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension", "jwt"],
+    "authors": [
+        {
+            "name": "David Xu",
+            "email": "david.xu.uts@163.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "lcobucci/jwt": "^5.0",
+        "yiisoft/yii2": "^2.0.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "davidxu\\jwt\\": "src/"
+        }
+    }
+}
