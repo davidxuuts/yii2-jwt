@@ -2,7 +2,7 @@
     "name": "davidxu/yii2-jwt",
     "description": "A JWT extension based on Icobucci",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension", "jwt"],
+    "keywords": ["yii2","extension", "jwt", "yii2-jwt"],
     "authors": [
         {
             "name": "David Xu",
