@@ -115,7 +115,7 @@ class ExampleController extends \yii\rest\Controller
 <a name="basicusage-creating"></a>
 ### 3. Creating
 
-Just use the builder to create a new JWT/JWS tokens:
+Just use `getToken` to create/issue a new JWT token:
 
 ```php
 $jwt = new davidxu\jwt\Jwt();
@@ -126,14 +126,14 @@ $token = $jwt->getToken([
     'app_id' => Yii::$app->id,
 ]);
 
-echo $token->getClaim('uid'); // will print "12345"
+echo $token->claims()->get('uid'); // will print "12345"
 echo $token->toString();
 ```
 
 <a name="basicusage-parsing"></a>
 ### Parsing from strings
 
-Use the parser to create a new token from a JWT string (using the previous token as example):
+Use `parseToken` to parse a token from a JWT string (using the previous token as example):
 
 ```php
 $jwt = new davidxu\jwt\Jwt();
